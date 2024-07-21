@@ -1,0 +1,553 @@
+/*#0C800A*/
+
+
+body {
+    padding-top: 70px;
+     }
+
+/*Start Nav bar*/
+
+/* Navbar padding*/
+.container-fluid {
+    padding-right: 30px;
+    padding-left: 50px;
+      }
+ 
+/* Navbar list*/
+.navbar-default .navbar-nav  li a{
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+      }
+
+
+/*size navbar*/
+.navbar {
+min-height: 50px;
+       }
+
+
+/*Dropdown menu */
+
+/* Border color & size of dropmenu */
+.dropdown-menu {
+   border-top: 5px solid #0C800A;
+   width: 200px;
+}
+
+/*Text in dropdown menu*/
+.dropdown-menu li a {
+ color: black; 
+}
+
+/* hover of dropmenu */
+.dropdown-menu .active  a, 
+.dropdown-menu .active a:hover, 
+.dropdown-menu .active a:focus {
+    background-color: #73da6c;
+
+}
+
+
+
+/*navbar CSS end*/
+
+
+/*offers  start*/
+
+.price_table {
+    
+    padding-top: 90px;
+    padding-bottom: 40px;
+
+}
+
+/*Word Amazing*/
+.price_table h1 {
+margin-bottom: 30px;
+color: black;
+font-family: 'Exo 2', sans-serif;
+}
+
+/*Word Prices and offers */
+.price_table span {
+margin-bottom: 30px;
+color: #0C800A;
+font-family: 'Exo 2', sans-serif;
+}
+
+
+/*The product box + border*/
+.price_table .price_box {
+    background: white;
+    padding: 10px;
+    border: 2px solid #0C800A;
+    margin-bottom: 15px;
+}
+
+
+
+.price_table .price_box:hover img {
+    -webkit-transform: translateY(0px) scale(0.8);
+    -moz-transform: translateY(0px) scale(0.8);
+    -ms-transform: translateY(0px) scale(0.8);
+    -o-transform: translateY(0px) scale(0.8);
+    transform: translateY(0px) scale(0.8);
+}
+
+.price_table .price_box img {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    width: 100%
+}
+
+/*Price color*/
+.info li {
+    color: #0C800A;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/*price before discouts*/
+.info li.right-text {
+    color: #777;
+    text-decoration: line-through;
+    margin-left: 6em;
+    margin-bottom: 15px ;
+}
+
+ul.info {
+    margin: 1.5em 0;
+    margin-bottom: 15px;
+   
+}
+
+/* offers end*/
+
+/*start section contact us*/
+.contact-us{
+    background:url('../images/picture4.png') no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    height: 600px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.contact-us p {
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.contact-us textarea {
+    height:108px;
+}
+
+.contact-us button {
+    background-color: #0C800A;
+    color: white;
+    border: 0px;
+}
+
+/*end section contact us*/
+
+/*start footer*/
+/*Backgroud*/
+.footer {
+    background:#DEF2E9;
+    color:black;
+    padding-top: 25px;
+
+
+}
+.footer a {
+    color: #AAA;
+}
+.footer a:hover {
+    color: #FFF;
+}
+
+/*color of site and follow */
+.footer h2 {
+    color:#0C800A;
+    
+}
+
+
+
+.footer .threecol li {
+    width: 33.33333%;
+    float: left;
+    padding: 5px;
+}
+
+
+
+
+.footer .icons li {
+    width: 15%;
+    float: left;
+   
+}
+
+/*color of icons*/
+.footer .icons .fa-facebook {
+    color:#1D387D;
+}
+
+.footer .icons .fa-instagram {
+    color:#C266E0;
+}
+.footer .icons .fa-twitter {
+    color:#3297D5;
+}
+.footer .icons .fa-youtube-play {
+    color:red;
+}
+
+/*End of color of icons */
+
+.footer .copyright{
+   background: #DEF2E9;
+    color:#0C800A ;
+    padding-top:15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.footer .copyright span 
+{
+    color:black;
+}
+/*end footer
+
+
+
+/*start map*/
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    border: 5px solid #0C800A;
+    margin: 25px;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/*start section mapabout */
+.map-about {
+    padding-top: 70px;
+   
+}
+
+/*Word of welcome*/
+.map-about h1
+{
+    
+    color:black;
+}
+
+.map-about h3
+{
+    
+    color:#0C800A;
+
+}
+
+
+/*color of at green palza*/
+.map-about .lead
+ {
+    color:#0C800A;
+    font-size:25px;
+    
+}
+
+
+
+
+/*start section login*/
+.login{
+  background:url('../images/login2.png') no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.login p {
+    margin-bottom: 40px;
+     
+}
+
+.login input {
+width: 50%;
+margin: auto;
+color : black;
+}
+
+
+.login .form-control:focus {
+    border-color: #26DC89;
+
+  }
+
+.login  button:hover {
+    background-color: #2DDD4D;
+    color: white;
+  }
+
+/*Login button*/
+.login button {
+    background-color: #0C800A;
+    color: white;
+    border: 0px;
+    width: 200px;
+    margin: auto;
+}
+
+/*user icon*/
+.login i {
+  color: #17BA70;
+}
+
+.login a {
+  color: #17BA70;
+  margin:10px;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.login a:hover {
+  color: #2DDD4D;
+  text-decoration: none;
+}
+
+
+.register{
+    background:url('../images/picture22.png') no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    height: auto;
+    padding-top: 75px;
+    padding-bottom: 40px;
+    margin: auto;
+
+
+
+}
+.register p {
+    margin-bottom: 40px;
+    font-style: normal;
+}
+
+.register input {
+width: 50%;
+margin: auto;
+color : black;
+
+}
+
+.register .form-control:focus {
+    border-color: #26DC89;
+
+  }
+
+.register  button:hover {
+    background-color: #2DDD4D;
+    color: white;
+  }
+
+
+.register button {
+    background-color: #0C800A;
+    color: white;
+    border: 0px;
+    width: 200px;
+    margin: auto;
+}
+.register i {
+  color: #17BA70;
+}
+
+.register a {
+  color: #17BA70;
+  margin:10px;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.register a:hover {
+  color:  #2DDD4D;
+  text-decoration: none;
+}
+
+
+/*end section login*/
+
+/* about us Start */
+.aboutus h1 {
+	color: #0C800A ;
+
+}
+
+.aboutus p {
+	font-size: 20px;
+	font-family: times new roman ;
+	color: black ;
+}
+
+.aboutus h3{
+	color: #0C800A ;
+}
+
+/* boutus end */
+
+/* timer Start */ 
+.time p {
+    font-size: 16Px; 
+    font-weight: bold;
+
+}
+
+/* timer end */ 
+
+.rate {
+     border: 5.5px solid #0C800A;
+     width: 60% ; 
+
+}
+
+.rate h3 {
+    font-size: 28px; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.rate p {
+    font-size: 18px;
+    text-align: center;
+
+}
+
+
+
+.countdown p {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0px;
+}
+
+
+.countdown h3 {
+    text-align: center;
+    color: #0C800A ;
+    font-size:  70px;
+    font-style: bold;
+}
+
+.countdown {
+    border-color: #0C800A ;
+    border: 2.5px;
+    border-style: dotted;
+    margin: 15px;
+    margin-bottom: 15px;
+
+}
+
+input[type=text], input[type=email], 
+input[type=password], input[type=url], select, textarea {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+
+}
+
+input[type=color] {
+    padding: 5px;
+    margin: 8px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit], input[type=reset] {
+    width: 30%;
+    background-color: #0C800A;
+    color: white;
+    padding: 14px ;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #45a049;
+}
+
+
+.pro {
+    border-radius: 5px;
+    background-color: #D5D8DC ;
+    padding: 10px;
+    margin-left: 80px;
+    margin-right: 60px;
+    margin-top: 35px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+.user h1{
+    text-align: center;
+    color: #0C800A ; 
+}
+
+.user table, th , td{
+      border: 2px solid black;
+      width: 50%;
+      margin-left: 350px;
+      margin-top: 15px;
+      text-align: center;
+}
+
+.user th {
+    color:#0C800A;
+}
+
+.user td{
+    font-style: bold;
+}
+.info{
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+  }
+  
+  .inf h2{
+      color: #0C800A;
+  }
+  .infotext h2{
+      text-align: center;
+      color: #0C800A;
+  }
+

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="icon" href="images/picture5.png" /> <!-- icon of the page -->
+    <link rel='stylesheet'href ='css/bootstrap.css'/>
+   <link rel='stylesheet'href ='css/font-awesome.min.css'/>
+    <link rel='stylesheet'href ='css/style.css'/>
+    <link rel='stylesheet'href='css/media.css'/>
+    <link rel='stylesheet'href='css/animate.css'/>
+    <meta name="keywords" content="Home Furniture,Website"> 
+
+</head>
+
+
+<body>
+
+<!-- navbar start -->
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a href="index.html"><img src="images/logo78.png" alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+       <ul class="nav navbar-nav navbar-right">
+     <li><a href="index.html">Home</a></li>
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="furniture.html">Furniture</a></li>
+            <li><a href="bed.html">Beds</a></li>
+            <li><a href="bath.html">Bath</a></li>
+            <li><a href="home decor.html">Home Decor</a></li>
+            <li><a href="kitchen.html">Kitchen</a></li>
+          </ul>
+        </li>
+            <li><a href="find us.html">Find Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li class="active"><a href="login.html">Login<span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- navbar end -->
+
+
+<!-- start login page -->
+<div class="pro" align="left">
+  <h1 align="center">Login</h1>
+  <form onsubmit="return validation2()" method="post" action="login_handler.php">
+  
+    <label>Email</label>
+    <br>
+    <input type="text" name="email" size="25" placeholder="Your Email" />
+    <br>
+    <label>Password</label>
+    <br>
+    <input type="password" name="password" placeholder="Your Password" size="25" />
+    <br>
+    <br>
+    <div align="left">
+    <input type="submit" value="Login" onclick="validation2()">
+
+    <input type="reset" value="Cancel" onclick="clear();" />
+    </div>
+    <br>
+    <div class="container signin" align="left">
+    <p>Create an <a href="register.html">Account</a>.</p>
+  </div>
+  </form>
+</div>
+
+
+
+<!-- ===================javaScript======================== -->
+
+<script>
+  function validation2(){
+    var valid = true;
+    
+    formLabels = document.getElementsByTagName("label");
+    
+    var email = document.getElementsByName("email")[0];
+    if(email.value==""){
+      formLabels[0].innerHTML="Email: [required]";
+      formLabels[0].style="color: red";
+      valid = false;
+    }
+    else if(email.value.indexOf("@")==-1){
+      formLabels[0].innerHTML="Email: [Enter correct email]";
+      formLabels[0].style="color: red";
+      valid = false;
+    }
+    
+    else {
+      formLabels[0].innerHTML="Email:";
+      formLabels[0].style="color: black";
+      valid = (valid) ? true : false;
+    }
+    
+    var password = document.getElementsByName("password")[0];
+              if(password.value == ""){
+                formLabels[1].innerHTML="Password: [required]";
+                formLabels[1].style="color: red";
+                valid = false;
+              }
+              else if(password.value.length < 8){
+                formLabels[1].innerHTML="Password: [Length at least 8]";
+                formLabels[1].style="color: red";
+                valid = false;
+              }
+              else {
+                formLabels[1].innerHTML="Password:";
+                formLabels[1].style="color: black";
+                valid = (valid) ? true : false;
+              }
+            
+   //if (valid) {
+    //zlert("You Login Successfully ");	
+    //location.replace("index.html")
+   //return false;
+    //}
+  
+   // return valid;
+  }
+  
+  function clear(){
+    var myArray = new Array();
+    myArray[0] = "Email: *";
+    myArray[1] = "Password: *";
+    for(var i=0 ; i <2 ; i++){
+      formLabels[i].innerHTML = myArray[i];
+      formLabels[i].style = "color: black";
+    }
+  }
+  </script>
+<!-- ===================javaScript======================== -->
+ 
+
+
+<section class="footer">
+  <div class="container">
+    <div class="row ">
+      <div class="col-lg-6">
+        <a href="index.html"><img src="images/logo78.png" alt=""></a>
+          <ul class="list-unstyled threecol ">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="furniture.html"> Furniture</a></li>
+              <li><a href="bed.html">Beds </a></li>
+             <li><a href="bath.html">Bath</a></li>
+             <li><a href=" home decor.html">Home Decor</a></li>
+             <li><a href="kitchen.html"> Kithchen</a></li>
+             <li><a href="find us.html">Find Us</a></li>
+             <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <h2>Follow us </h2>
+        <ul class="list-unstyled icons">
+          <li> <i class="fa fa-facebook fa-5x " aria-hidden="true"></i></li>
+           <li><i class="fa fa-instagram fa-5x" aria-hidden="true"></i></li>
+          <li> <i class="fa fa-twitter fa-5x" aria-hidden="true"></i></li>
+          <li><i class="fa fa-youtube-play fa-5x" aria-hidden="true"></i></li>
+        </ul>
+        <div class="time">
+
+          <p>Day & Time</p>
+
+          <p id="demo2" ></p>
+          <p id="demo"></p>
+          
+          <script>
+          var d = new Date();
+          var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+          document.getElementById("demo2").innerHTML = days[d.getDay()];
+          </script>
+          
+          <script>
+          var myVar = setInterval(myTimer ,1000);
+          function myTimer() {
+            var d = new Date();
+            document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+                              } 
+          </script>          
+
+</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright text-center">
+             Copyright&copy;2023<span>Home</span>.R&A
+            </div>
+        </section>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>new WOW().init();</script>
+    
+</body>
+</html>
